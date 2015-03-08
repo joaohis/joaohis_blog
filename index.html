@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+
+<article class="post">
+    <header>
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-date">{{ post.date | date: "%-d de %Y" }}</p>
+    </header>
+
+    <div class="post-content">
+        {{ post.content }}
+    </div>
+
+    <footer>
+        Tags: <a href="">#tag1</a>, <a href="">#tag2</a>, <a href="">#tag3</a>
+    </footer>
+</article>
+
+{% endfor %}
